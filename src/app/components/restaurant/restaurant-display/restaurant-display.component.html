@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Adresse</th>
+    <th>Moyenne</th>
+    <th>Note de l'évaluation finale</th>
+
+  </tr>
+  <tr *ngFor="let restaurant of restaurants">
+    <td>
+      {{restaurant.nom}}
+    </td>
+    <td>
+      {{restaurant.adresse}}
+    </td>
+    <td>
+      {{restaurant.moyenneEvaluation}}
+
+    </td>
+    <td>
+      <img ngSrc="{{restaurant.moyenneEvaluation}}" alt="yes" width="100" height="100">
+    </td>
+  </tr>
+</table>
